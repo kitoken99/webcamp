@@ -1,0 +1,3 @@
+[submodule "task1_responsive_design"]
+	path = task1_responsive_design
+	url = git@github.com:kitoken99/task1_responsive_design.git
