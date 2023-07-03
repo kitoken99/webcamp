@@ -1,7 +1,4 @@
-@font-face {
-  font-family: Chalkduster;
-  src: url('fonts/Chalkduster.ttf') format("truetype");
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -143,7 +140,7 @@ main{
 .popular-text, .categories-text {
   padding-bottom: 5px;
   border-bottom: 1px solid #f7f7f7;
-  border: none;
+  margin-bottom:5px;
 }
 .popular-text:last-child, .categories-text:last-child{
   margin: 0;
@@ -164,7 +161,7 @@ main{
 }
 
 .instagram-box:nth-child(odd) {
-  margin: 0 10px 10px 0;
+  margin-right: 10px;
 }
 
 .instagram-box:nth-child(1) {
@@ -200,4 +197,49 @@ footer{
 
 .footer-text{
   color: #fff;
+}
+
+@media screen and (max-width: 425px){
+  header{
+    width: 100%;
+  }
+  .nav-list-item{
+    padding-bottom: 10px;
+    display: block;
+  }
+  .social{
+    display:none;
+  }
+  .main-visual-content{
+    width: 100%;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+  }
+  .blog{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .blog-image {
+    width: 50%;
+  }
+  .blog-content{
+    width: 50%;
+  }
+  .sidebar{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sidebar-contents{
+    padding-left: 10px;
+  }
+  
+  .instagram-box {
+  width: 47%;
+  padding-top: 110px;
+  margin-bottom: 10px;
+  }
 }
