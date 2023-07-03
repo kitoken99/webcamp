@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Chalkduster;
+  src: url('fonts/Chalkduster.ttf') format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +13,26 @@ a{
   text-decoration: none;
 }
 
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+/*Chalkdusterはwindows環境にははいっていないのかも...*/
+/*https://jp.ffonts.net/Chalkduster.font*/
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+.social {
+  position: absolute; 
+  top: 22px; 
+  right: 22px;
+}
+.social i {
+  display: inline-block;
+  margin-left: 20px;
 }
 header .heading{
   font-size: 32px;
@@ -36,7 +55,7 @@ header .heading{
   background-position: center;
 }
 .main-visual-content {
-  width: 40%; 
+  width: 40%;
   height: 300px;
   background-color: rgba(0,0,0,0.5);
   text-align: center;
